@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="nav">
+                <div class="circle1">
+                    <!-- Left arrow image -->
+                    <img src="left-icon-img.svg" alt="Left Arrow" class="nav-icon">
+                </div>
+                <div class="circle2">
+                    <!-- Menu bar image -->
+                    <img src="menu-bar.svg" alt="Menu Bar" class="nav-icon">
+                </div>
+            </div>
+            <div class="middle">
+                <div class="circle3">
+                    <div class="circle4">
+                        <!-- Middle image -->
+                        <img src="album-cover.jpeg" alt="Album Cover" class="middle-img">
+                    </div>
+                </div>
+            </div>
+            <div class="song_name">
+                <h3>Despacito</h3>
+                <p>Luis Fonsi, daddy Yankee</p>
+            </div>
+            <div class="scroll">
+                <input type="range" value="0" id="progress">
+            </div>
+            <footer>
+                <div class="play">
+                    <div class="c1">
+                        <!-- Previous button icon -->
+                        <img src="backward-solid.svg" alt="Previous" class="control-icon">
+                    </div>
+                    <div class="c2">
+                        <!-- Play button icon -->
+                        <img src="play-solid.svg" alt="Play" class="play-icon">
+                    </div>
+                    <div class="c3">
+                        <!-- Next button icon -->
+                        <img src="forward-solid.svg" alt="Next" class="control-icon">
+                    </div>
+                </div>
+                <!-- Audio element -->
+                <audio id="audio-player" controls style="display: none;">
+                    <source src="audio-file.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.music-player{
+    height: 65vh;
+    width: 35vw;
+    background-color: white;
+    margin: auto;
+    background-color:burlywood;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.circle1{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 0px 0px 20px;
+}
+.circle2{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 20px 0px 0px;
+}
+.middle{
+    width: 100%;
+    height: 130px;
+    /* background-color: aqua; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.circle3{
+    margin: auto;
+    height: 136px;
+    width: 136px;
+    background-color: black;
+    border-radius: 50%;
+}
+.circle4{
+    margin: auto;
+    margin-top: 5px;
+    height: 126px;
+    width: 126px;
+    background-color: white;
+    border-radius: 50%;
+}
+.song_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+
+}
+.song_name h3{
+    font-weight: 600;
+    font-size: 40px;
+}
+.song_name p{
+    font-weight: 500;
+    font-size: x-large;
+}
+.play{
+    width: 100%;
+    height: 30px;
+    /* background-color: blue; */
+}
+
+/* Footer styling */
+footer {
+    padding-top: 10px;
+    background-color: burlywood;
+}
+
+/* Styling for play controls inside the footer */
+.play {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 50px;
+}
+
+/* Individual play controls (c1, c2, c3) */
+.c1, .c3 {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.c2 {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Optionally, you can add a hover effect to the play controls */
+.c1:hover, .c2:hover, .c3:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+}
+.scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 35px;
+}
+.line{
+    width: 90%;
+    height: 2px;
+    border: 5px solid grey;
+    border-radius: 25px;
+}
+
+
+/* Circular progress bar styling */
+.progress-circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid grey;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    transform-origin: center;
+    transform: rotate(0deg);
+    transition: transform 0.3s linear;
+}
+#progress{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 6px;
+    background-color: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    background-color: #f53192;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+/* Image styling for navigation icons */
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 9px;
+}
+.circle1:hover,.circle2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+} 
+/* Styling for the image inside the middle circle */
+.middle-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Control button icon styling */
+.control-icon {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    margin: auto;
+}
+.play-icon {
+    width: 50%;
+    height: 60%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
